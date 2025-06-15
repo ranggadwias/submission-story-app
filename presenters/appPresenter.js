@@ -4,7 +4,7 @@ import AddStoryView from "../views/addStoryView.js";
 import RegisterView from "../views/registerView.js";
 import LoginView from "../views/loginView.js";
 import DetailView from "../views/detailView.js";
-import { getAllFavoriteStories } from "../src/utils/idb.js";
+import { getAllFavoriteStories } from "../docs/utils/idb.js";
 
 export default class AppPresenter {
   constructor(root) {
