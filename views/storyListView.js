@@ -1,4 +1,4 @@
-import { saveFavoriteStory, deleteFavoriteStory, getAllFavoriteStories } from "../docs/utils/idb.js";
+import { saveFavoriteStory, deleteFavoriteStory, getAllFavoriteStories } from "../src/utils/idb.js";
 
 export default class StoryListView {
   constructor(root) {
