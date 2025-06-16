@@ -8,7 +8,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    clean: true, // hapus isi dist sebelum build
+    publicPath: '',
+    clean: true,
   },
   module: {
     rules: [
@@ -28,8 +29,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html', // pakai ini
-      inject: 'body', // masukkan bundle.js di akhir body
+      template: './src/index.html',
+      inject: 'body',
     }),
     new CopyWebpackPlugin({
       patterns: [

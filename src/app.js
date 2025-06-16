@@ -12,7 +12,7 @@ async function registerServiceWorkerAndSubscribe() {
   if (!("serviceWorker" in navigator)) return;
 
   try {
-    const registration = await navigator.serviceWorker.register("/sw.js");
+    const registration = await navigator.serviceWorker.register("sw.js");
     await navigator.serviceWorker.ready;
 
     const token = localStorage.getItem("token");
