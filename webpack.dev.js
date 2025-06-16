@@ -7,7 +7,7 @@ module.exports = merge(common, {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '',
+    publicPath: '/',
     clean: true,
   },
   devServer: {
