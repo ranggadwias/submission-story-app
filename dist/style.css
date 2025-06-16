@@ -1,0 +1,141 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f1de;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 1rem;
+  background: #1e90ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  box-shadow: none;
+  text-decoration: none;
+  transition: top 0.3s ease, box-shadow 0.3s ease;
+  z-index: 9999;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 1rem;
+  outline: none;
+  box-shadow: 0 4px 8px rgb(30 144 255 / 0.5);
+}
+
+header nav ul {
+  background-color: #264653;
+  padding: 1rem 2rem;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav a {
+  color: #e9c46a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header nav a:hover,
+header nav a:focus {
+  color: #2a9d8f;
+}
+
+main {
+  padding: 1rem 2rem;
+  min-height: 80vh;
+}
+
+.story-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.story-item {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.story-item img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.story-item h2 {
+  color: #264653;
+  margin: 0;
+}
+
+button {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #264653;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input[type="text"],
+textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#map, #add-map {
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+  .story-item {
+    width: 100%;
+  }
+  #map, #add-map {
+    height: 300px;
+  }
+}
