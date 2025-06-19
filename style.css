@@ -49,6 +49,28 @@ header nav a:focus {
   color: #2a9d8f;
 }
 
+.push-control {
+  margin-top: 0.5rem;
+}
+
+.push-control button {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.push-control button:hover,
+.push-control button:focus {
+  background-color: #264653;
+}
+
 main {
   padding: 1rem 2rem;
   min-height: 80vh;
