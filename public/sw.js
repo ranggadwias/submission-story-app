@@ -1,10 +1,14 @@
+const isDev = self.location.hostname === 'localhost';
+const BASE_PATH = isDev ? '' : '/submission-story-app';
+
 const CACHE_NAME = 'story-app-v1';
+
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/bundle.js',
-  '/manifest.json',
+  `${BASE_PATH}/`,
+  `${BASE_PATH}/index.html`,
+  `${BASE_PATH}/style.css`,
+  `${BASE_PATH}/bundle.js`,
+  `${BASE_PATH}/manifest.json`,
   'https://fonts.googleapis.com/css2?family=Poppins&display=swap',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
   'https://unpkg.com/leaflet@1.9.3/dist/leaflet.css',
